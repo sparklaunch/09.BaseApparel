@@ -38,6 +38,9 @@
         {:else if !isEmailValid}
             <p transition:slide class="warning">Please provide a valid email</p>
         {/if}
+        {#if isInvalid}
+            <img class="icon-error" src="/assets/icon-error.svg" alt="Error" />
+        {/if}
         <button type="submit">
             <img src="/assets/icon-arrow.svg" alt="Arrow" />
         </button>
@@ -93,5 +96,9 @@
         position: absolute;
         bottom: -25px;
         left: 30px;
+    }
+    .icon-error {
+        align-self: center;
+        margin: 0 20px;
     }
 </style>
