@@ -16,6 +16,6 @@
         background-image: url("/assets/bg-pattern-desktop.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 50px 100px;
+        padding: 50px 150px;
     }
 </style>
