@@ -1,6 +1,9 @@
 <script lang="ts">
     import Left from "./components/Left.svelte";
     import Right from "./components/Right.svelte";
+    let windowHeight: number;
+    let mainHeight: number;
+    $: offset = windowHeight - mainHeight;
 </script>
 
 <svelte:head>
@@ -11,8 +14,9 @@
         rel="stylesheet"
     />
 </svelte:head>
-<main>
-    <Left />
+<svelte:window bind:innerHeight={windowHeight} />
+<main bind:clientHeight={mainHeight}>
+    <Left {offset} />
     <Right />
 </main>
 
@@ -20,5 +24,11 @@
     main {
         display: flex;
         height: 100%;
+    }
+    @media all and (max-width: 1440px) {
+        main {
+            flex-direction: column-reverse;
+            height: auto;
+        }
     }
 </style>

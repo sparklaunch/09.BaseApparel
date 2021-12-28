@@ -29,4 +29,9 @@
         font-size: 18px;
         line-height: 1.5;
     }
+    @media all and (max-width: 1440px) {
+        #content > h1 {
+            font-size: 54px;
+        }
+    }
 </style>
