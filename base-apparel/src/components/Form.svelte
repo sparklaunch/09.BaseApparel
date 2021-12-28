@@ -17,7 +17,7 @@
     #form > form > input {
         outline: none;
         border: none;
-        padding: 15px 30px;
+        padding: 20px 30px 15px 30px;
         background-color: transparent;
         font-size: 20px;
         /* Worth noting that all input elements have default min-width properties */
