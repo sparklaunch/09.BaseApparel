@@ -9,7 +9,7 @@
 
 <style>
     #content {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     #content > h1 {
         font-weight: 300;
